@@ -25,7 +25,7 @@ class App extends Component {
     todos.push({id: this.state.nextId, text: todoText});
     this.setState({
       todos: todos,
-      nextId: ++this.state.nextId
+      nextId: this.state.nextId + 1
     });
   }
 
